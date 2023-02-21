@@ -1,0 +1,7 @@
+*.txt
+
+! input.txt
+
+*.[oa]
+
+*~
