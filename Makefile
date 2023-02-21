@@ -1,5 +1,5 @@
 all: main
-	gcc -Wall -Werror -o main main.c
+	g++ -Wall -o main main.cpp
 clean:
 	rm main
 run:
