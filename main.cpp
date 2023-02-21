@@ -19,8 +19,9 @@ struct Circle
 void f(string s)
 {
 	string name_struct;
-	int name_struct_index
 	
+	name_struct = s.erase(s.find('('));
+	cout << name_struct << endl;
 	
 }
 
@@ -34,7 +35,7 @@ int main()
 	{
 		while (getline(input, s))
 		{
-			
+			f(s);
 		}
 	}
 	
