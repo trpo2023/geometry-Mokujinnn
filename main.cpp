@@ -16,6 +16,14 @@ struct Circle
 	float radius;
 };
 
+void f(string s)
+{
+	string name_struct;
+	int name_struct_index
+	
+	
+}
+
 
 int main()
 {
@@ -26,7 +34,7 @@ int main()
 	{
 		while (getline(input, s))
 		{
-			cout << s << endl;
+			
 		}
 	}
 	
