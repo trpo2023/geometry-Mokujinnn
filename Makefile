@@ -1,6 +1,6 @@
-all: main
-	g++ -Wall -o main main.cpp
+all:
+	g++ -Wall -o geometry main.cpp
 clean:
-	rm main
+	rm geometry
 run:
-	./main
+	./geometry input.txt
