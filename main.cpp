@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+//#include <cctype>
 
 using namespace std;
 
@@ -43,6 +44,11 @@ void string_parse(string s)
 		<< ": expected '('" << endl;
 		return;
 	} 
+	
+	for (int i = 0; i < (int)name_struct.size(); i++)
+	{
+		name_struct[i] = tolower(name_struct[i]);
+	}
 	
 	if ((int)s.find(')') != -1)
 	{
