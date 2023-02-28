@@ -38,7 +38,8 @@ void string_parse(string s)
 			}
 		}
 
-		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' << endl << "Error at column " << index_unexpected_symbol+1 
+		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' 
+		<< endl << "Error at column " << index_unexpected_symbol+1 
 		<< ": expected '('" << endl;
 		return;
 	} 
@@ -62,14 +63,16 @@ void string_parse(string s)
 			}
 		}
 
-		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' << endl << "Error at column " << index_unexpected_symbol
+		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' 
+		<< endl << "Error at column " << index_unexpected_symbol 
 		<< ": expected ')'" << endl;
 		return;
 	}
 
-	if (!(name_struct == "circle" or name_struct == "triangle" or name_struct == "polygon"))
+	if (!(name_struct == "circle" || name_struct == "triangle" || name_struct == "polygon"))
 	{
-		cout << s << endl << '^' << endl << "Error at column 0: expected 'circle', 'triangle' or 'polygon'" << endl;
+		cout << s << endl << '^' << endl 
+		<< "Error at column 0: expected 'circle', 'triangle' or 'polygon'" << endl;
 		return;
 	}
 
@@ -88,7 +91,8 @@ void string_parse(string s)
 
 	if (index_unexpected_symbol != -1)
 	{
-		cout << s << endl << string(s.find('(')+index_unexpected_symbol+1, ' ') << '^' << endl << "Error at column " << s.find('(') + index_unexpected_symbol
+		cout << s << endl << string(s.find('(')+index_unexpected_symbol+1, ' ') 
+		<< '^' << endl << "Error at column " << s.find('(') + index_unexpected_symbol
 		+1 << ": expected '<double>'" << endl;
 		return;
 	}
@@ -107,7 +111,8 @@ void string_parse(string s)
 
 	if (index_unexpected_symbol != -1)
 	{
-		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' << endl << "Error at column " << index_unexpected_symbol
+		cout << s << endl << string(index_unexpected_symbol, ' ') << '^' 
+		<< endl << "Error at column " << index_unexpected_symbol
 		<< ": unexpected token" << endl;
 		return;
 	}
