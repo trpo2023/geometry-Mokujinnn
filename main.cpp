@@ -116,6 +116,8 @@ void string_parse(string s)
 		<< ": unexpected token" << endl;
 		return;
 	}
+	
+	cout << s << endl;
 
 }
 
